@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="default" namespace="/" extends="struts-default">
+        <action name="Home" class="com.mlnotes.web.Home">
+            <result name="SUCCESS">pages/home.jsp</result>
+        </action>
+        <action name="About" class="com.mlnotes.web.About">
+            <result name="SUCCESS">pages/about.jsp</result>
+        </action>
+    </package>
+</struts>

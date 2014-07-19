@@ -1,0 +1,72 @@
+/* 
+    Created on : 2014-7-18, 22:40:59
+    Author     : Zhu Hanfeng <me@mlnotes.com>
+*/
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background: #899FB4;
+}
+
+.clear{
+    clear: both;
+}
+
+.header{
+    background: #777;
+    height: 80px;
+}
+
+.footer{
+    background: #ABABAB;
+    height: 50px;
+}
+
+.content{
+    
+}
+
+.main{
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 800px;
+    background: #666;
+}
+
+.main-left{
+    width: 600px;
+    height: 500px;
+    background: #333;
+    float: left;
+}
+
+.menu{
+    width: 200px;   
+    float: left;
+    position:relative;
+    top: -35px;
+}
+
+.menu>ul{
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+.menu>ul>li{
+    margin-bottom: 10px;
+}
+
+.menu>ul>li>a{
+    text-decoration: none;
+    color: #D9D9D9;
+    font-size: 24px;
+}
+
+.menu>ul>li>a:hover{
+    color: #F7F7F7;
+}
