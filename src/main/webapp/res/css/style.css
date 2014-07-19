@@ -9,7 +9,7 @@
 }
 
 body{
-    background: #899FB4;
+    background: url(../img/bg.png);
 }
 
 .clear{
@@ -33,16 +33,14 @@ body{
 .main{
     margin-left: auto;
     margin-right: auto;
-    
     width: 1000px;
-    background: #889EB9;
 }
 
 .main-left{
     width: 800px;
     height: 500px;
-    background: #333;
     float: left;
+    background: url(../img/noise.png);
 }
 
 .menu{
