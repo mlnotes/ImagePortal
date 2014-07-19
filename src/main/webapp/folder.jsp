@@ -11,8 +11,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Folder</title>
+        <link rel="stylesheet" href="res/css/style.css" >
     </head>
     <body>
+        <%@include file="/WEB-INF/jspf/header.jspf" %>
+        
         <h1>Hello World!</h1>
         <h3><s:property value="folder" /></h3>
         
@@ -26,5 +29,6 @@
             <h3> Not Supported</h3>
         </s:else>
         
+        <%@include file="/WEB-INF/jspf/footer.jspf" %>
     </body>
 </html>

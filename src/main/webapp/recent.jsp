@@ -10,8 +10,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Recent</title>
+        <link rel="stylesheet" href="res/css/style.css" >
     </head>
     <body>
+        <%@include file="/WEB-INF/jspf/header.jspf" %>
         <h1>Hello World!</h1>
+        <%@include file="/WEB-INF/jspf/footer.jspf" %>
     </body>
 </html>

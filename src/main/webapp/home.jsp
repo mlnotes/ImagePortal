@@ -10,13 +10,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Home</title>
-
         <link rel="stylesheet" href="res/css/style.css" >
     </head>
     <body>
-        <div class="header">
-
-        </div>
+        <%@include file="/WEB-INF/jspf/header.jspf" %>
 
         <div class="content">
             <div class="main">
@@ -35,8 +32,6 @@
             </div>    
         </div>
 
-        <div class="footer">
-
-        </div>
+        <%@include file="/WEB-INF/jspf/footer.jspf" %>
     </body>
 </html>

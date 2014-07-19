@@ -11,9 +11,13 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Keyword</title>
+        <link rel="stylesheet" href="res/css/style.css" >
     </head>
     <body>
+        <%@include file="/WEB-INF/jspf/header.jspf" %>
         <h1>Hello World!</h1>
         <h3><s:property value="keyword" /></h3>
+        <%@include file="/WEB-INF/jspf/footer.jspf" %>
+        
     </body>
 </html>
