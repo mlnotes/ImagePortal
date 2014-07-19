@@ -1,11 +1,17 @@
 function Mlnotes() {
-    var header = ".header";
-    var footer = ".footer";
-    var main = ".main";
-    var mainLeft = ".main-left";
+    var header = ".header",
+        footer = ".footer",
+        main = ".main",
+        mainLeft = ".main-left",
+        menu = ".menu";
+
+    var mainWidth = 0,
+        menuWidth = 0;
 
     this.init = function() {
         $(document).ready(function() {
+            mainWidth = $(main).width();
+            menuWidth = $(menu).width();
             $(window).resize(windowResized);
             setSize();
         });
@@ -18,9 +24,22 @@ function Mlnotes() {
             centerHeight = $(main).height(),
             pullHeight = height - headerHeight - footerHeight;
             
+         var width = $(window).width(),
+             narrowWidth = width - 100;
+         
+        console.log(width, narrowWidth, mainWidth);
+        
         if(centerHeight < pullHeight){
             $(main).height(pullHeight);
             $(mainLeft).height(pullHeight);
+        }
+        
+        if(mainWidth > narrowWidth){
+            $(main).width(narrowWidth);
+            $(mainLeft).width(narrowWidth - menuWidth);
+        }else{
+            $(main).width(mainWidth);
+            $(mainLeft).width(mainWidth - menuWidth);
         }
     };
 
