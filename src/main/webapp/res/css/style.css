@@ -18,12 +18,12 @@ body{
 
 .header{
     background: #777;
-    height: 80px;
+    height: 60px;
 }
 
 .footer{
     background: #ABABAB;
-    height: 50px;
+    height: 30px;
 }
 
 .content{
@@ -35,7 +35,7 @@ body{
     margin-right: auto;
     
     width: 800px;
-    background: #666;
+    background: #889EB9;
 }
 
 .main-left{
@@ -69,4 +69,9 @@ body{
 
 .menu>ul>li>a:hover{
     color: #F7F7F7;
+}
+
+.menu>ul>li.active>a{
+    color: #E45858;
+    font-weight: bold;
 }

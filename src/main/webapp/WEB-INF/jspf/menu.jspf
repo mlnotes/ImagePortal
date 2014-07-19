@@ -1,3 +1,12 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<h2>Hello World!</h2>
+<div class="menu">
+    <ul>
+        <li <s:if test="%{#page == 'about'}">class="active"</s:if> ><a href="about.action">ABOUT</a></li>
+        <li <s:if test="%{#page == 'home'}">class="active"</s:if> ><a href="home.action">HOME</a></li>
+        <li <s:if test="%{#page == 'recent'}">class="active"</s:if>><a href="recent.action">RECENT</a></li>
+        <li <s:if test="%{#page == 'portrait'}">class="active"</s:if>><a href="folder.action?folder=portrait">PORTRAIT</a></li>
+        <li <s:if test="%{#page == 'scenery'}">class="active"</s:if>><a href="folder.action?folder=scenery">SCENERY</a></li>
+        <li <s:if test="%{#page == 'others'}">class="active"</s:if>><a href="#">OTHERS</a></li>
+    </ul>
+</div>
