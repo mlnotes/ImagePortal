@@ -6,10 +6,19 @@
 <struts>
     <package name="default" namespace="/" extends="struts-default">
         <action name="Home" class="com.mlnotes.web.Home">
-            <result name="SUCCESS">pages/home.jsp</result>
+            <result name="SUCCESS">home.jsp</result>
         </action>
         <action name="About" class="com.mlnotes.web.About">
-            <result name="SUCCESS">pages/about.jsp</result>
+            <result name="SUCCESS">about.jsp</result>
+        </action>
+        <action name="Recent" class="com.mlnotes.web.Recent">
+            <result name="SUCCESS">recent.jsp</result>
+        </action>
+        <action name="Folder" class="com.mlnotes.web.Folder">
+            <result name="SUCCESS">folder.jsp</result>
+        </action>
+        <action name="Keyword" class="com.mlnotes.web.Keyword">
+            <result name="SUCCESS">keyword.jsp</result>
         </action>
     </package>
 </struts>

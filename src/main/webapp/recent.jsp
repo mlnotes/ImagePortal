@@ -1,6 +1,6 @@
 <%-- 
-    Document   : home
-    Created on : 2014-7-18, 21:34:32
+    Document   : recent
+    Created on : 2014-7-19, 9:46:42
     Author     : Zhu Hanfeng <me@mlnotes.com>
 --%>
 
@@ -9,10 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Home</title>
+        <title>Recent</title>
     </head>
     <body>
         <h1>Hello World!</h1>
-        <%@include file="/WEB-INF/jspf/footer.jspf" %>
     </body>
 </html>
