@@ -34,12 +34,12 @@ body{
     margin-left: auto;
     margin-right: auto;
     
-    width: 800px;
+    width: 1000px;
     background: #889EB9;
 }
 
 .main-left{
-    width: 600px;
+    width: 800px;
     height: 500px;
     background: #333;
     float: left;

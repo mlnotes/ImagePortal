@@ -15,9 +15,13 @@ function Mlnotes() {
         var height = $(window).height(),
             headerHeight = $(header).height(),
             footerHeight = $(footer).height(),
-            centerHeight = height - headerHeight - footerHeight;
-        $(main).height(centerHeight);
-        $(mainLeft).height(centerHeight);
+            centerHeight = $(main).height(),
+            pullHeight = height - headerHeight - footerHeight;
+            
+        if(centerHeight < pullHeight){
+            $(main).height(pullHeight);
+            $(mainLeft).height(pullHeight);
+        }
     };
 
     var windowResized = function() {
