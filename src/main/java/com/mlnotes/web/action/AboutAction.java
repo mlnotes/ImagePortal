@@ -4,13 +4,17 @@
  * and open the template in the editor.
  */
 
-package com.mlnotes.web;
+package com.mlnotes.web.action;
+
+import org.apache.struts2.convention.annotation.Result;
 
 /**
  *
  * @author Zhu Hanfeng <me@mlnotes.com>
  */
-public class Home {
+
+@Result(name="SUCCESS", location="/about.jsp")
+public class AboutAction {
     public String execute(){
         return "SUCCESS";
     }

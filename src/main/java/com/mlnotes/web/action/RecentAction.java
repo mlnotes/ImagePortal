@@ -4,23 +4,17 @@
  * and open the template in the editor.
  */
 
-package com.mlnotes.web;
+package com.mlnotes.web.action;
+
+import org.apache.struts2.convention.annotation.Result;
 
 /**
  *
  * @author Zhu Hanfeng <me@mlnotes.com>
  */
-public class Folder {
-    private String folder;
 
-    public String getFolder() {
-        return folder;
-    }
-
-    public void setFolder(String folder) {
-        this.folder = folder;
-    }
-    
+@Result(name="SUCCESS", location="/recent.jsp")
+public class RecentAction {
     public String execute(){
         return "SUCCESS";
     }

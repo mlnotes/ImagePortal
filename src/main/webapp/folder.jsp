@@ -15,5 +15,16 @@
     <body>
         <h1>Hello World!</h1>
         <h3><s:property value="folder" /></h3>
+        
+        <s:if test="%{folder == 'scenery'}">
+            <h3>This is Scenery</h3>
+        </s:if>
+        <s:elseif test="%{folder == 'portrait'}">
+            <h3> This is Portait</h3>
+        </s:elseif>
+        <s:else>
+            <h3> Not Supported</h3>
+        </s:else>
+        
     </body>
 </html>

@@ -23,11 +23,11 @@
                 <div class="main-left"></div>
                 <div class="menu">
                     <ul>
-                        <li><a href="About">ABOUT</a></li>
-                        <li><a href="Home">HOME</a></li>
-                        <li><a href="Recent">RECENT</a></li>
-                        <li><a href="Folder?folder=portrait">PORTRAIT</a></li>
-                        <li><a href="Folder?folder=scenery">SCENERY</a></li>
+                        <li><a href="about.action">ABOUT</a></li>
+                        <li><a href="home.action">HOME</a></li>
+                        <li><a href="recent.action">RECENT</a></li>
+                        <li><a href="folder.action?folder=portrait">PORTRAIT</a></li>
+                        <li><a href="folder.action?folder=scenery">SCENERY</a></li>
                         <li><a href="#">OTHERS</a></li>
                     </ul>
                 </div>
