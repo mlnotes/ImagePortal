@@ -18,6 +18,7 @@
     </head>
     <body>
         <%@include file="/WEB-INF/jspf/header.jspf" %>
+        <h1><s:property value="name" /></h1>
         <div class="content">
             <div class="main">
                 <div class="main-left"></div>

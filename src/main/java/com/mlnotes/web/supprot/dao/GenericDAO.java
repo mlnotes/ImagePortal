@@ -15,13 +15,16 @@ import org.hibernate.criterion.Criterion;
  * @param <ID>
  */
 public class GenericDAO<T, ID extends Serializable> {
-    private final SessionFactory sessionFactory;
+    private SessionFactory sessionFactory;
     private final Class<T> persistentClass;
     
     public GenericDAO(){
-        sessionFactory = HibernateUtil.getSessionFactory();
         persistentClass = (Class<T>)((ParameterizedType)getClass()
                         .getGenericSuperclass()).getActualTypeArguments()[0];
+    }
+
+    public void setSessionFactory(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
     }
     
     public T get(ID id){
