@@ -7,8 +7,8 @@
 package com.mlnotes.web.action;
 
 import com.mlnotes.web.support.service.ImageService;
-import javax.annotation.Resource;
 import org.apache.struts2.convention.annotation.Result;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  *
@@ -19,7 +19,7 @@ import org.apache.struts2.convention.annotation.Result;
 public class HomeAction{
     private Integer count = 0;
     private Integer imageCount = 0;
-    @Resource
+    @Autowired
     private ImageService imageService;
 
     public Integer getCount() {

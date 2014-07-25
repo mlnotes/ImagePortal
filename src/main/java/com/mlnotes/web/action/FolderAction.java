@@ -7,9 +7,9 @@
 package com.mlnotes.web.action;
 
 import com.mlnotes.web.support.service.ImageService;
-import javax.annotation.Resource;
 import org.apache.struts2.convention.annotation.Result;
 import org.apache.struts2.convention.annotation.Results;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  *
@@ -22,7 +22,7 @@ import org.apache.struts2.convention.annotation.Results;
 public class FolderAction {
     private String folder;
     private Integer imageCount = 0;
-    @Resource
+    @Autowired
     private ImageService imageService;
 
     public void setImageService(ImageService imageService) {
