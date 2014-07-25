@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <bean id="aboutAction" class="com.mlnotes.web.action.AboutAction"></bean>
+    
+    <bean id="homeAction" class="com.mlnotes.web.action.HomeAction">
+        <property name="name" value="ZHF" />
+    </bean>
+    
+    <bean id="recentAction" class="com.mlnotes.web.action.RecentAction"></bean>
+    
+    <bean id="folderAction" class="com.mlnotes.web.action.FolderAction"></bean>
+
+</beans>
