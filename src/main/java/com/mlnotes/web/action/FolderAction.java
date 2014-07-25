@@ -6,6 +6,8 @@
 
 package com.mlnotes.web.action;
 
+import com.mlnotes.web.support.service.ImageService;
+import javax.annotation.Resource;
 import org.apache.struts2.convention.annotation.Result;
 import org.apache.struts2.convention.annotation.Results;
 
@@ -19,9 +21,20 @@ import org.apache.struts2.convention.annotation.Results;
 })
 public class FolderAction {
     private String folder;
+    private Integer imageCount = 0;
+    @Resource
+    private ImageService imageService;
 
+    public void setImageService(ImageService imageService) {
+        this.imageService = imageService;
+    }
+    
     public String getFolder() {
         return folder;
+    }
+
+    public Integer getImageCount() {
+        return imageCount;
     }
 
     public void setFolder(String folder) {
@@ -29,6 +42,7 @@ public class FolderAction {
     }
     
     public String execute(){
+        imageCount = imageService.getCount();
         return "SUCCESS";
     }
 }

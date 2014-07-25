@@ -12,10 +12,16 @@ import org.apache.struts2.convention.annotation.Result;
  *
  * @author Zhu Hanfeng <me@mlnotes.com>
  */
-
 @Result(name="SUCCESS", location="/about.jsp")
 public class AboutAction {
+    private Integer count = 0;
+
+    public Integer getCount() {
+        return count;
+    }
+    
     public String execute(){
+        count += 1;
         return "SUCCESS";
     }
 }
