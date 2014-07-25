@@ -11,7 +11,8 @@ package com.mlnotes.web.action;
  * @author Zhu Hanfeng <me@mlnotes.com>
  */
 public class HomeAction{
-    private String name = "XXX";
+    private String name;
+    private Integer count = 0;
 
     public void setName(String name) {
         this.name = name;
@@ -20,8 +21,13 @@ public class HomeAction{
     public String getName() {
         return name;
     }
-    
+
+    public Integer getCount() {
+        return count;
+    }
+        
     public String execute(){
+        count += 1;
         return "SUCCESS";
     }
 }

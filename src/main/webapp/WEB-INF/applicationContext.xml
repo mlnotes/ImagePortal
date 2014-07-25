@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-    <bean id="aboutAction" class="com.mlnotes.web.action.AboutAction"></bean>
+    <bean id="aboutAction" class="com.mlnotes.web.action.AboutAction" scope="prototype"></bean>
     
     <bean id="homeAction" class="com.mlnotes.web.action.HomeAction">
         <property name="name" value="ZHF" />

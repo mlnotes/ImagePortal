@@ -11,7 +11,14 @@ package com.mlnotes.web.action;
  * @author Zhu Hanfeng <me@mlnotes.com>
  */
 public class AboutAction {
+    private Integer count = 0;
+
+    public Integer getCount() {
+        return count;
+    }
+    
     public String execute(){
+        count += 1;
         return "SUCCESS";
     }
 }

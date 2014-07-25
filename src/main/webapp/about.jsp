@@ -20,7 +20,9 @@
         <%@include file="/WEB-INF/jspf/header.jspf" %> 
         <div class="content">
             <div class="main">
-                <div class="main-left"></div>
+                <div class="main-left">
+                    <h3><s:property value="count" /></h3>
+                </div>
                 <%@include file="/WEB-INF/jspf/menu.jspf" %>
                 <div class="clear"></div>
             </div>    
