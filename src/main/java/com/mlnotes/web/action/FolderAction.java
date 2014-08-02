@@ -6,17 +6,10 @@
 
 package com.mlnotes.web.action;
 
-import org.apache.struts2.convention.annotation.Result;
-import org.apache.struts2.convention.annotation.Results;
-
 /**
  *
  * @author Zhu Hanfeng <me@mlnotes.com>
  */
-
-@Results({
-    @Result(name="SUCCESS", location="/folder.jsp")
-})
 public class FolderAction {
     private String folder;
 

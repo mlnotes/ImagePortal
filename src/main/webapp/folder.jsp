@@ -5,8 +5,6 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib prefix="s" uri="/struts-tags" %>
-<s:set var="page"><s:property value="folder" /></s:set>
 <!DOCTYPE html>
 <html>
     <head>

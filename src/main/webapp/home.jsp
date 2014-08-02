@@ -5,8 +5,6 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib prefix="s" uri="/struts-tags" %>
-<s:set var="page">home</s:set>
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,7 +16,7 @@
     </head>
     <body>
         <%@include file="/WEB-INF/jspf/header.jspf" %>
-        <h1><s:property value="name" /></h1>
+        
         <div class="content">
             <div class="main">
                 <div class="main-left"></div>

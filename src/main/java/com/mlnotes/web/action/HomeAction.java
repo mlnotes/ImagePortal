@@ -6,14 +6,10 @@
 
 package com.mlnotes.web.action;
 
-import org.apache.struts2.convention.annotation.Result;
-
 /**
  *
  * @author Zhu Hanfeng <me@mlnotes.com>
  */
-
-@Result(name="SUCCESS", location="/home.jsp")
 public class HomeAction{
     private String name;
 
