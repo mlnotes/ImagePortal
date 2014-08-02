@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="s" uri="/WEB-INF/tlds/router.tld" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,8 +16,9 @@
         <script type="text/javascript" src="res/js/mlnotes.js"></script>
     </head>
     <body>
+        <s:set name="page"><%= 1==1%></s:set>
         <%@include file="/WEB-INF/jspf/header.jspf" %>
-        
+        <h2>Get Value <s:property value="page" /></h2>
         <div class="content">
             <div class="main">
                 <div class="main-left"></div>

@@ -1,4 +1,4 @@
-package com.mlnotes.web.filter;
+package com.mlnotes.web.router;
 
 import com.mlnotes.web.factory.ObjectFactory;
 import java.io.File;
@@ -25,7 +25,7 @@ import org.dom4j.io.SAXReader;
  *
  * @author Zhu Hanfeng <me@mlnotes.com>
  */
-public class RouteFilter implements Filter{
+public class RouterFilter implements Filter{
     private final String DefaultConfig = "struts.xml";
     
     private Map<String, Action> actionMap;
