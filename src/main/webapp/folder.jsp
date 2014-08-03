@@ -12,7 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Folder</title>
         <link rel="stylesheet" href="res/css/style.css" >
-        <script type="text/javascript" src="res/js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="res/js/lib/jquery-1.11.1.min.js"></script>
         <script type="text/javascript" src="res/js/mlnotes.js"></script>
     </head>
     <body>

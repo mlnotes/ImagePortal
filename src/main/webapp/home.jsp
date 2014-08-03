@@ -12,13 +12,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Home</title>
         <link rel="stylesheet" href="res/css/style.css" >
-        <script type="text/javascript" src="res/js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="res/js/lib/jquery-1.11.1.min.js"></script>
         <script type="text/javascript" src="res/js/mlnotes.js"></script>
     </head>
     <body>
         <s:set name="page">home</s:set>
         <%@include file="/WEB-INF/jspf/header.jspf" %>
-        <h2>Get Value <s:property value="page" /></h2>
         <div class="content">
             <div class="main">
                 <div class="main-left"></div>
