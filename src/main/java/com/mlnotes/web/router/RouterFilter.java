@@ -26,7 +26,8 @@ import org.dom4j.io.SAXReader;
  * @author Zhu Hanfeng <me@mlnotes.com>
  */
 public class RouterFilter implements Filter{
-    private final String DefaultConfig = "struts.xml";
+    private static final String DEFAULT_CONFIG = "struts.xml";
+    public static final String ACTION_OBJECT = "action.Object"; 
     
     private Map<String, Action> actionMap;
     private ObjectFactory objectFactory;
@@ -36,7 +37,7 @@ public class RouterFilter implements Filter{
         String config = fc.getInitParameter("config");
         
         if(config == null){
-            config = DefaultConfig;
+            config = DEFAULT_CONFIG;
         }
         actionMap = readActionMap(config);
         objectFactory = ObjectFactory.getInstance();
@@ -62,6 +63,7 @@ public class RouterFilter implements Filter{
                     String result = (String)method.invoke(obj);
                     String resource = action.getResource(result);
                     RequestDispatcher dispatcher = req.getRequestDispatcher(resource);
+                    req.setAttribute(ACTION_OBJECT, obj);
                     dispatcher.forward(req, res);
                     return;
                 } catch (NoSuchMethodException ex) {
