@@ -16,7 +16,7 @@
         <script type="text/javascript" src="res/js/mlnotes.js"></script>
     </head>
     <body>
-        <s:set name="page"><%= 1==1%></s:set>
+        <s:set name="page">home</s:set>
         <%@include file="/WEB-INF/jspf/header.jspf" %>
         <h2>Get Value <s:property value="page" /></h2>
         <div class="content">

@@ -44,6 +44,8 @@ public class RouterFilter implements Filter{
 
     public void doFilter(ServletRequest req, ServletResponse res, FilterChain fc) throws IOException, ServletException {
         System.out.println("Route Filter do Filter");
+        System.out.println(req.getClass());
+        System.out.println(res.getClass());
         
         HttpServletRequest request = (HttpServletRequest)req;
         String path = request.getServletPath();

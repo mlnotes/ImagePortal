@@ -1,8 +1,6 @@
 package com.mlnotes.web.router.tag;
 
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.jsp.JspWriter;
 
 /**

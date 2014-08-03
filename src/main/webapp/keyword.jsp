@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="s" uri="/WEB-INF/tlds/router.tld" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,6 +14,7 @@
         <link rel="stylesheet" href="res/css/style.css" >
     </head>
     <body>
+        <s:set name="page">keyword</s:set>
         <%@include file="/WEB-INF/jspf/header.jspf" %>
         <h1>Hello World!</h1>
         <%@include file="/WEB-INF/jspf/footer.jspf" %>

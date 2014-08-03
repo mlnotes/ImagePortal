@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="s" uri="/WEB-INF/tlds/router.tld" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,6 +16,7 @@
         <script type="text/javascript" src="res/js/mlnotes.js"></script>
     </head>
     <body>
+        <s:set name="page">about</s:set>
         <%@include file="/WEB-INF/jspf/header.jspf" %> 
         <div class="content">
             <div class="main">

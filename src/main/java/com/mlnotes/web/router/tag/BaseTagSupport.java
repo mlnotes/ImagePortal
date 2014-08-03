@@ -21,7 +21,7 @@ public class BaseTagSupport extends BodyTagSupport {
         return stack.get(name);
     }
     
-    private Map<String, Object> getValueStack(){
+    public Map<String, Object> getValueStack(){
         Object objStack = pageContext.getAttribute(ROUTER_VALUESTACK_KEY);
         if(objStack != null){
             return (Map<String, Object>)objStack;
