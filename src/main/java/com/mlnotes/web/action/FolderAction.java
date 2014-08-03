@@ -11,8 +11,8 @@ package com.mlnotes.web.action;
  * @author Zhu Hanfeng <me@mlnotes.com>
  */
 public class FolderAction {
-    private String folder = "portrait";
-
+    private String folder;
+    
     public String getFolder() {
         return folder;
     }
