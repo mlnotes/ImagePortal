@@ -9,14 +9,14 @@ import javax.servlet.ServletContextListener;
  * @author Zhu Hanfeng <me@mlnotes.com>
  */
 public class SimpleContextListener implements ServletContextListener {
-    private final String DefaultConfig = "applicationContext.xml";
+    private final String DEFAULT_CONFIG = "applicationContext.xml";
     
     public void contextInitialized(ServletContextEvent sce) {
         System.out.println("Object Factory Init");
         ServletContext context = sce.getServletContext();
         String config = context.getInitParameter("config");
         if(config == null){
-            config = DefaultConfig;
+            config = DEFAULT_CONFIG;
         }
         ObjectFactory.create(config);
     }
